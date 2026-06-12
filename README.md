@@ -174,6 +174,7 @@ Creates chatbot interface.
 ---
 
 ##  Screenshots
+Screenshot 2026-06-12 195055.png
 
 ### Main Interface
 
