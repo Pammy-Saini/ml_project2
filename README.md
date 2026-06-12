@@ -199,7 +199,7 @@ Add chatbot response screenshot here:
 
 ---
 
-## 📷 Adding Screenshots
+## Adding Screenshots
 
 Create folder:
 
@@ -229,7 +229,7 @@ smart-bot/
 
 ---
 
-## 🎯 Learning Outcomes
+##  Learning Outcomes
 
 After completing this project, you will learn:
 
@@ -241,7 +241,7 @@ After completing this project, you will learn:
 
 ---
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 Possible enhancements:
 
@@ -253,13 +253,13 @@ Possible enhancements:
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Pammy Saini**  
 Python / AI-ML / Cyber Security Learner
 
 ---
 
-## ⭐ Support
+##  Support
 
-If you like this project, give it a star on GitHub ⭐
+If you like this project, give it a star on GitHub 
