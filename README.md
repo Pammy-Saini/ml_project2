@@ -1,0 +1,265 @@
+# SMART_BOT - AI Chatbot using Gemini API
+
+SMART_BOT is a simple AI chatbot built using **Python**, **Streamlit**, and **Google Gemini API**.  
+It allows users to enter queries and get AI-generated responses in real time.
+
+---
+
+##  Project Overview
+
+This project demonstrates how to integrate **Google Generative AI (Gemini)** with a Streamlit web application.
+
+Users can:
+
+- Enter any question/query
+- Send the query to Gemini AI
+- Receive intelligent AI-generated responses instantly
+
+---
+
+##  Features
+
+- Interactive chatbot UI using Streamlit
+- Powered by Google Gemini API
+- Fast AI responses
+- Simple and beginner-friendly project
+- Environment variable support using `.env`
+
+---
+
+##  Technologies Used
+
+- Python
+- Streamlit
+- Google Generative AI (Gemini)
+- python-dotenv
+
+---
+
+##  Project Structure
+
+```bash
+smart-bot/
+│
+├── app.py
+├── .env
+├── requirements.txt
+└── README.md
+```
+
+---
+
+##  Installation
+
+### Step 1: Clone Repository
+
+```bash
+git clone <your-repository-url>
+```
+
+---
+
+### Step 2: Open Project Folder
+
+```bash
+cd smart-bot
+```
+
+---
+
+### Step 3: Create Virtual Environment
+
+```bash
+python -m venv .venv
+```
+
+Activate environment:
+
+#### Windows
+```bash
+.venv\Scripts\activate
+```
+
+#### Mac/Linux
+```bash
+source .venv/bin/activate
+```
+
+---
+
+### Step 4: Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+##  Setup API Key
+
+Create a `.env` file:
+
+```env
+GOOGLE_API_KEY=your_api_key_here
+```
+
+Get Gemini API key from:
+
+:contentReference[oaicite:0]{index=0}
+
+---
+
+##  Run Application
+
+```bash
+streamlit run app.py
+```
+
+Application will open in browser automatically.
+
+Default local URL:
+
+```bash
+http://localhost:8501
+```
+
+---
+
+##  Code Explanation
+
+### Load Environment Variables
+
+```python
+from dotenv import load_dotenv
+load_dotenv()
+```
+
+Loads API key from `.env`.
+
+---
+
+### Configure Gemini Model
+
+```python
+genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+model = genai.GenerativeModel("gemini-2.5-flash")
+```
+
+Initializes Gemini model.
+
+---
+
+### Generate Response
+
+```python
+def my_output(query):
+    response = model.generate_content(query)
+    return response.text
+```
+
+Sends user query to Gemini AI and returns response.
+
+---
+
+### Streamlit UI
+
+```python
+st.header("SMART_BOT")
+input = st.text_input("Input", key="input")
+submit = st.button("Ask your query")
+```
+
+Creates chatbot interface.
+
+---
+
+##  Screenshots
+
+### Main Interface
+
+Add screenshot here:
+
+```html
+<p align="center">
+  <img src="screenshots/main-ui.png" width="1200">
+</p>
+```
+
+---
+
+### Chat Response
+
+Add chatbot response screenshot here:
+
+```html
+<p align="center">
+  <img src="screenshots/chat-response.png" width="1200">
+</p>
+```
+
+---
+
+## 📷 Adding Screenshots
+
+Create folder:
+
+```bash
+screenshots
+```
+
+Add screenshots:
+
+- `main-ui.png`
+- `chat-response.png`
+
+Project structure:
+
+```bash
+smart-bot/
+│
+├── screenshots/
+│   ├── main-ui.png
+│   └── chat-response.png
+│
+├── app.py
+├── .env
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## 🎯 Learning Outcomes
+
+After completing this project, you will learn:
+
+✔ Streamlit basics  
+✔ API integration  
+✔ Environment variables  
+✔ AI chatbot development  
+✔ Gemini API usage  
+
+---
+
+## 🔮 Future Improvements
+
+Possible enhancements:
+
+- Chat history
+- Voice input
+- Dark mode UI
+- Multiple AI models
+- File upload support
+
+---
+
+## 👨‍💻 Author
+
+**Pammy Saini**  
+Python / AI-ML / Cyber Security Learner
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a star on GitHub ⭐
